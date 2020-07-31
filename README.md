@@ -1,5 +1,7 @@
 # SingleLaneBridge_Parallel-Computing
 
+[!alt text] (https://github.com/rafchriz/SingleLaneBridge_Parallel-Computing/blob/master/single_lane_bridge.png)
+
 The bridge shown in the picture permits only a single lane of traffic. This means, that only cars moving to the same direction can exist on the bridge at the same time. A safety violation occurs, when two moving cars of different direction enter, at the same time, the bridge.
 This problem represents concurrency. The cars are the threads and the bridge is the shared CPU.
 The input file specifies how many cars exist on the west entrance and how many of them on the east entrance of the bridge.
