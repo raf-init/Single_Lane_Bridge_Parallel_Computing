@@ -1,0 +1,30 @@
+W_Car1: Waiting for bridge. Going towards East Sun Mar 17 21:43:55 EET 2019
+W_Car1: Crossing bridge ...Sun Mar 17 21:43:55 EET 2019
+W_Car1: Across the Bridge.Sun Mar 17 21:43:55 EET 2019
+W_Car2: Waiting for bridge. Going towards East Sun Mar 17 21:43:56 EET 2019
+E_Car1: Waiting for bridge. Going towards West Sun Mar 17 21:43:56 EET 2019
+E_Car1: Crossing bridge ...Sun Mar 17 21:43:56 EET 2019
+E_Car1: Across the Bridge.Sun Mar 17 21:43:56 EET 2019
+W_Car2: Crossing bridge ...Sun Mar 17 21:43:56 EET 2019
+W_Car2: Across the Bridge.Sun Mar 17 21:43:56 EET 2019
+W_Car3: Waiting for bridge. Going towards East Sun Mar 17 21:43:57 EET 2019
+W_Car4: Waiting for bridge. Going towards East Sun Mar 17 21:43:58 EET 2019
+E_Car2: Waiting for bridge. Going towards West Sun Mar 17 21:43:58 EET 2019
+E_Car2: Crossing bridge ...Sun Mar 17 21:43:58 EET 2019
+E_Car2: Across the Bridge.Sun Mar 17 21:43:58 EET 2019
+W_Car4: Crossing bridge ...Sun Mar 17 21:43:58 EET 2019
+W_Car4: Across the Bridge.Sun Mar 17 21:43:58 EET 2019
+W_Car5: Waiting for bridge. Going towards East Sun Mar 17 21:43:59 EET 2019
+E_Car3: Waiting for bridge. Going towards West Sun Mar 17 21:44:00 EET 2019
+E_Car3: Crossing bridge ...Sun Mar 17 21:44:00 EET 2019
+E_Car3: Across the Bridge.Sun Mar 17 21:44:00 EET 2019
+W_Car5: Crossing bridge ...Sun Mar 17 21:44:00 EET 2019
+W_Car5: Across the Bridge.Sun Mar 17 21:44:00 EET 2019
+E_Car4: Waiting for bridge. Going towards West Sun Mar 17 21:44:02 EET 2019
+E_Car4: Crossing bridge ...Sun Mar 17 21:44:02 EET 2019
+E_Car4: Across the Bridge.Sun Mar 17 21:44:02 EET 2019
+W_Car3: Crossing bridge ...Sun Mar 17 21:44:02 EET 2019
+W_Car3: Across the Bridge.Sun Mar 17 21:44:02 EET 2019
+E_Car5: Waiting for bridge. Going towards West Sun Mar 17 21:44:04 EET 2019
+E_Car5: Crossing bridge ...Sun Mar 17 21:44:04 EET 2019
+E_Car5: Across the Bridge.Sun Mar 17 21:44:04 EET 2019

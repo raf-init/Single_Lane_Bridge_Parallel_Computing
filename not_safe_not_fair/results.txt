@@ -1,0 +1,7 @@
+W_Car1: Waiting for bridge. Going towards East Sun Mar 17 21:40:53 EET 2019
+W_Car1: Crossing bridge ...Sun Mar 17 21:40:53 EET 2019
+W_Car2: Waiting for bridge. Going towards East Sun Mar 17 21:40:54 EET 2019
+E_Car1: Waiting for bridge. Going towards West Sun Mar 17 21:40:54 EET 2019
+W_Car2: Crossing bridge ...Sun Mar 17 21:40:54 EET 2019
+E_Car1: Crossing bridge ...Sun Mar 17 21:40:54 EET 2019
+Crash...
