@@ -22,7 +22,7 @@ public class TimerObject extends TimerTask {
   }
 
 public void run() {
-	//ektelite kathe fora to epomeno thread poy vriskete stin oura
+	//runs everytime next thread is on queue 
 	if(!q.isEmpty())
 	{executor1.execute(q.element());
 	q.remove();}
