@@ -5,7 +5,7 @@ public class EastCar implements Runnable{
     
     private String id;          
     private Bridge bridge;    
-    private boolean finished=false; //metavliti pou diloni ehi oloklirothi to treksimo tou ekastote thread
+    private boolean finished=false; 
 
     public EastCar(String id, Bridge bridge) {
 
@@ -24,7 +24,7 @@ public class EastCar implements Runnable{
       try {
         while (!finished)
         {
-        	//to thread ehi ksekinisi alla den ehi mpi akomi sti gefira to autokinito
+        	//thread is started, car not on bridge yet
     		System.out.println(this.getID()+": Waiting for bridge. Going towards West " + new Date());
         	doProcessing();
         }
@@ -34,9 +34,9 @@ public class EastCar implements Runnable{
     }
 
     private void doProcessing () throws InterruptedException {
-    	//to autokinito mpeni sti gefira
+    	//car enters bridge
     	bridge.eastCross(this);
-    	//to autokinito vgeni apo ti gefira
+    	//car leaves bridge
     	bridge.upEastExited(this);
     	finished=true;
     	
