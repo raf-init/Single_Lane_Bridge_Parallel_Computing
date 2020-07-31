@@ -1,20 +1,18 @@
 import java.util.Date;
  
 public class  FairBridge extends Bridge{
-	//o arithmos ton ditikon kai anatolikon autokiniton poy vriskonte mesa sti gefira
+	//number of west and east cars on bridge 
     private int nwest=0;
     private int neast=0;
-    private boolean westturn = true; //diloni an ine i sira ton ditikon autokiniton
-    //theoroume pos edelay>wdelay kathe fora
-    private int wdelay_counter = 0; //auksanete kathe fora pou aneveni sti gefira ena ditiko amaksi
-    								//kai i megisti timi tis isoute me to poses fores i metavliti
-    								//edelay ine megaliteri tis metavlitis wdelay
-    private int edelay_counter = 0; //i megisti timi tis metavlitis afti tha ine 1
+    private boolean westturn = true; //whose turn is it?
+    //we set edelay>wdelay 
+    private int wdelay_counter = 0; // increase everytime a west car enters the bridge
+    								//maximum value = how many times edelay > wdelay 
+    private int edelay_counter = 0; //maximum value 1
     private int cc=0;
    
-    //dieroume tin edelay me tin wdelay oste na doume poses fores i proti ine megaliteri tis deuteris
-    //etsi argotera ean apo ti dieresi ehi prokipsi gia paradigma o arithmos 4, auto tha simeni pos
-    //gia kathe anatoliko autokinito pou pernai, tha ehoun perasi idi 4 ditika
+    //we devide edelay with wdelay
+    //if we get e.g. 4, for every east car that crosses, 4 west cars have already crossed.
     public int calc()
     {
     	return Main.edelay/Main.wdelay;
@@ -53,8 +51,7 @@ public class  FairBridge extends Bridge{
 
 
     public synchronized void westCross(WestCar f) throws InterruptedException {
-    	//ginete eleghos gia to an iparhoun sti gefira amaksia anatolika, gia to an
-    	//ine i sira ton ditikon ke an o metritis ehi ftasi ti megisti timi tou
+    	//are there any east cars on the bridge? whose turn is it? counter has it's maximum value?
     	while (neast>0 || wdelay_counter==calc() || westturn==false) wait();
     	++wdelay_counter;
     	++nwest;
@@ -69,8 +66,8 @@ public class  FairBridge extends Bridge{
     }
 
     public synchronized void eastCross(EastCar f) throws InterruptedException {
-    	//ginete eleghos gia to an iparhoun sti gefira amaksia ditika, gia to an
-    	//ine i sira ton ditikon ke an o metritis ehi ftasi ti megisti timi tou
+    	//are there any east cars on the bridge? whose turn is it? counter has it's maximum value?
+
     	while (nwest>0 ||  edelay_counter==1 || westturn==true)  wait();
     	++edelay_counter;
     	++neast;
