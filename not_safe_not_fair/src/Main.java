@@ -8,20 +8,16 @@ import java.util.Timer;
 
 public class Main {
 	
-    static int W=0,E=0;  //o arithmos ton ditikon kai anatolikon autokiniton ine panta o idios
-    					//i xrisi diaforetikon metavliton ginete gia logous organosis
-    //i metavlites wdelay, edelay mporoun na paroun diaforetikes times xoris na iparhei kapio
-    //provlima stin ektelesi tou kodika, gia paradigma wdelay=2 kai edelay=5 
-    //theoroume pos panta edelay>wdelay
-    static int wdelay = 1; //i kathisterisi afiksis ton ditikon autokiniton
-    static int edelay = 2; //i kathisterisi afiksis ton anatolikon autokiniton
-    static boolean interrupted = false; //metavliti ipeuthini gia to an ehi simvi trakarisma
+    static int W=0,E=0;  //number of east and west cars is always the same
+		         //we use different variables for ordering purposes
+    //we set edelay>wdelay 
+    static int wdelay = 1; //delay of west cars
+    static int edelay = 2; //delay of east cars
+    static boolean interrupted = false; //car crash handler
     
     public static void main(String[] args) throws InterruptedException {
         
     	//File reading
-    	//to parakato kommati kodika ehi antigrafi apo tous etimous kodikes pou mas dothikan
-    	//kata tin anathesi tis ergasias
         boolean success = false;    //looping file input
         
         String[] input;
@@ -49,7 +45,6 @@ public class Main {
         Bridge b;   //create bridge
         b = new Bridge();
         
-        //xrisi ouras gia tin organosi ton threads
         Queue<Thread> wq = new ArrayDeque<Thread>();
         Queue<Thread> eq = new ArrayDeque<Thread>();
         
@@ -62,7 +57,7 @@ public class Main {
 
         } 
         
-        //xrisi timers gia ton kathorismo tis afiksis kathe autokinitou
+        //timer for the arrival of each car
         Timer timer1 = null;
 
         TimerObject o1 = new TimerObject(wq, wq.peek(), timer1, wdelay);
