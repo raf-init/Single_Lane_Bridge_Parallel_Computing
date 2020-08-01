@@ -1,5 +1,4 @@
 
-//gia ti sigkekrimeni class stirihtika ston kodika pou mas dothike kata tin anathesi tis ergasias
 class Bridge {
 
     synchronized void eastCross(EastCar c) throws InterruptedException {}
