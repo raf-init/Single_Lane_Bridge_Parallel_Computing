@@ -20,13 +20,13 @@ public class TimerObject extends TimerTask {
   }
   
 public void run() {
-	//ean ehi simvi kapio trakarisma stamatai o timer kathos kai o executor
+	//if a crash has happened timer and executor are stopped
 	if(Main.interrupted==true)
 		{
 			this.cancel();
 			executor1.shutdown();
 		}
-	//diaforetika ektelite kathe fora to epomeno thread poy vriskete stin oura
+	//runs everytime next thread is on queue 
 	else if(!q.isEmpty())
 	{
 		executor1.execute(q.element());
