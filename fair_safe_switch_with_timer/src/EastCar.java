@@ -5,7 +5,7 @@ public class EastCar implements Runnable{
     
     private String id;          
     private Bridge bridge;    
-    private boolean finished=false; 
+    private boolean finished=false; //has the thread finished it's task?
 
     public EastCar(String id, Bridge bridge) {
 
