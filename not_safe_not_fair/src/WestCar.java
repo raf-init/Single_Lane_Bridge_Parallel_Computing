@@ -4,7 +4,7 @@ public class WestCar implements Runnable{
 	
     private String id;          
     private Bridge bridge;      
-    private boolean finished = false; //metavliti pou diloni ehi oloklirothi to treksimo tou ekastote thread
+    private boolean finished = false; //has the thread finished it's task?
 
     
     public WestCar(String id, Bridge bridge) {
@@ -22,7 +22,7 @@ public class WestCar implements Runnable{
       try {
         while (!finished && Main.interrupted==false)
         {
-        	//to thread ehi ksekinisi alla den ehi mpi akomi sti gefira to autokinito
+        	//thread has started but car is not on bridge yet 
         	System.out.println(this.getID()+": Waiting for bridge. Going towards East " + new Date());  //print initial waiting for bridge
         	doProcessing();
         }
@@ -30,9 +30,9 @@ public class WestCar implements Runnable{
     }
 
     private void doProcessing () throws InterruptedException {
-    	//to autokinito mpeni sti gefira
+    	//car enters bridge
     	bridge.westCross(this);
-    	//to autokinito vgeni apo ti gefira
+    	//car exits bridge
     	bridge.upWestExited(this);
     	finished=true;
     }
