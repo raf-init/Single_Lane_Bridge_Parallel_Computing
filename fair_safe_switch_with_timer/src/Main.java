@@ -8,8 +8,8 @@ import java.util.Timer;
 
 public class Main {
 	
-    static int W=0,E=0;//number of east and west cars is always the same
-		      //we use different variables for ordering purposes
+    static int W=0,E=0; //number of east and west cars is always the same
+		       //we use different variables for ordering purposes
     //we set edelay>wdelay 
     static int wdelay = 1; //delay of west cars
     static int edelay = 2; //delay of east cars
