@@ -1,9 +1,8 @@
 import java.util.Date;
 
-//gia ti sigkekrimeni class stirihtika ston kodika pou mas dothike kata tin anathesi tis ergasias
 class Bridge {
 	
-	//o arithmos ton ditikon kai anatolikon autokiniton poy vriskonte mesa sti gefira
+	//number of west and east cars
 	private int nwest=0;
     private int neast=0;
 
