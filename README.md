@@ -1,4 +1,4 @@
-# SingleLaneBridge_Parallel-Computing
+# Single_Lane_Bridge_Parallel_Computing
 
 ![alt text](https://github.com/rafchriz/SingleLaneBridge_Parallel-Computing/blob/master/single_lane_bridge.png)
 
